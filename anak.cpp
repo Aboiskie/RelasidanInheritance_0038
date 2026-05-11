@@ -1,11 +1,6 @@
 #ifndef ANAK_H
 #define ANAK_H
 
-#include <iostream>
-#include <string>
-
-using namespace std;
-
 class anak {
 public:
     string nama;
@@ -18,12 +13,5 @@ public:
         cout << "Anak \"" << nama << "\" tidak ada\n";
     }
 };
-
-
-int main() {
-    anak a("Budi");
-
-    return 0;
-}
 
 #endif
