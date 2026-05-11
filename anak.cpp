@@ -15,3 +15,8 @@ public:
     }
 };
 
+int main() {
+    anak a("Budi");
+
+    return 0;
+}
