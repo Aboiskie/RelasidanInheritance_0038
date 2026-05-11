@@ -3,9 +3,7 @@
 #include <string>
 using namespace std;
  
-// ============================================================
-// CLASS USER (Parent)
-// ============================================================
+
 class User {
 protected:
     static int globalId;  // shared counter untuk semua user
@@ -33,9 +31,6 @@ public:
 int User::globalId = 0;
  
  
-// ============================================================
-// CLASS MEMBER (turunan User)
-// ============================================================
 class Member : public User {
 private:
     bool status;  // true = aktif, false = nonaktif
@@ -58,9 +53,6 @@ public:
 };
  
  
-// ============================================================
-// CLASS ADMIN (turunan User)
-// ============================================================
 class Admin : public User {
 public:
     Admin(string nama, string email)
@@ -95,9 +87,6 @@ public:
 };
  
  
-// ============================================================
-// MAIN — contoh penggunaan
-// ============================================================
 int main() {
     // Buat admin
     Admin admin("Canzon", "canzon@example.com");
