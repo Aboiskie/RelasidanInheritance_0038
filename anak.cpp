@@ -1,5 +1,9 @@
+#ifndef ANAK_H
+#define ANAK_H
+
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 class anak {
@@ -15,8 +19,11 @@ public:
     }
 };
 
+
 int main() {
     anak a("Budi");
 
     return 0;
 }
+
+#endif
